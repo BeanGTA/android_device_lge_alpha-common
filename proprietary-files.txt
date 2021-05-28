@@ -64,7 +64,7 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libstabilitydomain_skel.so
 vendor/lib/rfsa/adsp/libsysmondomain_skel.so
-vendor/lib/rfsa/adsp/libsysmonquery_skel.so
+vendor/lib/rfsa/adsp/libface_proxy_skel.so
 vendor/lib/rfsa/adsp/libsysmon_skel.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
@@ -235,25 +235,20 @@ vendor/etc/libnfc-nxp-US.conf
 
 # NFC - Firmware
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
-vendor/firmware/libpn553_fw_1D.so:vendor/lib/libpn553_fw_1D.so
 vendor/firmware/libpn553_fw_64.so:vendor/lib64/libpn553_fw_64.so
-vendor/firmware/libpn553_fw_1D_64.so:vendor/lib/libpn553_fw_1D_64.so
 
 # Sensor - configs
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/registry/config/ak991x_dri_0.json
 vendor/etc/sensors/registry/config/apds9999.json
+vendor/etc/sensors/registry/config/apds9999_revc.json
 vendor/etc/sensors/registry/config/icm4x6xx_0.json
 vendor/etc/sensors/registry/config/sm8150_ak991x_0.json
-vendor/etc/sensors/registry/config/sm8150_ak991x_0_rev_01.json
-vendor/etc/sensors/registry/config/sm8150_ak991x_0_rev_02.json
+vendor/etc/sensors/registry/config/sm8150_ak991x_0_revc.json
 vendor/etc/sensors/registry/config/sm8150_apds9999.json
 vendor/etc/sensors/registry/config/sm8150_icm4x6xx_0.json
-vendor/etc/sensors/registry/config/sm8150_icm4x6xx_0_rev_01.json
-vendor/etc/sensors/registry/config/sm8150_icm4x6xx_0_rev_02.json
 vendor/etc/sensors/registry/config/sm8150_power_0.json
 vendor/etc/sensors/registry/config/sm8150_spl06_0.json
-vendor/etc/sensors/registry/config/sm8150_tmd3727.json
 vendor/etc/sensors/registry/config/sns_amd.json
 vendor/etc/sensors/registry/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/registry/config/sns_amd_sw_enabled.json
@@ -271,8 +266,10 @@ vendor/etc/sensors/registry/config/sns_facing.json
 vendor/etc/sensors/registry/config/sns_fmv.json
 vendor/etc/sensors/registry/config/sns_geomag_rv.json
 vendor/etc/sensors/registry/config/sns_gyro_cal.json
+vendor/etc/sensors/registry/config/sns_lg_airtouch_wakeup_proximity.json
 vendor/etc/sensors/registry/config/sns_lg_filtered_pressure.json
 vendor/etc/sensors/registry/config/sns_lg_gated_gyro.json
+vendor/etc/sensors/registry/config/sns_lg_tof_wakeup_proximity.json
 vendor/etc/sensors/registry/config/sns_mag_cal.json
 vendor/etc/sensors/registry/config/sns_multishake.json
 vendor/etc/sensors/registry/config/sns_pedometer.json
@@ -286,7 +283,6 @@ vendor/etc/sensors/registry/config/sns_tilt_to_wake.json
 vendor/etc/sensors/registry/config/sns_window_orientation.json
 vendor/etc/sensors/registry/config/sns_wrist_pedo.json
 vendor/etc/sensors/registry/config/spl06_0.json
-vendor/etc/sensors/registry/config/tmd3727.json
 vendor/etc/sensors/registry/registry/sensors_registry
 vendor/etc/sensors/registry/registry/sensors_settings
 vendor/etc/sensors/sns_reg_config
@@ -299,9 +295,9 @@ vendor/etc/wifi/GLOBAL/bdwlan.bin
 vendor/etc/wifi/GLOBAL/bdwlan_ch0.bin
 vendor/etc/wifi/GLOBAL/bdwlan_ch1.bin
 vendor/etc/wifi/icudt53l.dat
-vendor/etc/wifi/NA_SPR/bdwlan.bin
-vendor/etc/wifi/NA_SPR/bdwlan_ch0.bin
-vendor/etc/wifi/NA_SPR/bdwlan_ch1.bin
-vendor/etc/wifi/NA_VZW/bdwlan.bin
-vendor/etc/wifi/NA_VZW/bdwlan_ch0.bin
-vendor/etc/wifi/NA_VZW/bdwlan_ch1.bin
+vendor/etc/wifi/NA_ALL/bdwlan.bin
+vendor/etc/wifi/NA_ALL/bdwlan_ch0.bin
+vendor/etc/wifi/NA_ALL/bdwlan_ch1.bin
+vendor/etc/wifi/KR_ALL/bdwlan.bin
+vendor/etc/wifi/KR_ALL/bdwlan_ch0.bin
+vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
