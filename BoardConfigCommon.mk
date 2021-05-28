@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_FLASH_PATH := device/lge/flash-common
+COMMON_FLASH_PATH := device/lge/alpha-common
 
 # inherit from common v50
 -include device/lge/sm8150-common/BoardConfigCommon.mk
@@ -23,7 +23,7 @@ COMMON_FLASH_PATH := device/lge/flash-common
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_FLASH_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineage_flash_defconfig
+TARGET_KERNEL_CONFIG := vendor/lineage_alpha_defconfig
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4336910336
@@ -36,4 +36,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 BOARD_SEPOLICY_DIRS += $(COMMON_FLASH_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
--include vendor/lge/flashlmdd/BoardConfigVendor.mk
+-include vendor/lge/alphalm/BoardConfigVendor.mk

@@ -17,37 +17,32 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/flash-common/flash-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/alpha-common/alpha-common-vendor.mk)
 
-COMMON_FLASH_PATH := device/lge/flash-common
+COMMON_ALPHA_PATH := device/lge/alpha-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_FLASH_PATH)/overlay \
-    $(COMMON_FLASH_PATH)/overlay-lineage
+    $(COMMON_ALPHA_PATH)/overlay \
+    $(COMMON_ALPHA_PATH)/overlay-lineage
 
 # Properties
-TARGET_SYSTEM_PROP += $(COMMON_FLASH_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_FLASH_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_ALPHA_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_ALPHA_PATH)/vendor.prop
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(COMMON_FLASH_PATH)/audio/audio_effects_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_tune.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    $(COMMON_FLASH_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(COMMON_FLASH_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(COMMON_FLASH_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    $(COMMON_FLASH_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
+    $(COMMON_ALPHA_PATH)/audio/audio_effects_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_tune.xml \
+    $(COMMON_ALPHA_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
+    $(COMMON_ALPHA_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(COMMON_ALPHA_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(COMMON_ALPHA_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(COMMON_ALPHA_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    $(COMMON_ALPHA_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1440
 TARGET_SCREEN_HEIGHT := 3120
-
-# DAC
-PRODUCT_PACKAGES += \
-    QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@1.0-service
 
 # Display
 TARGET_SCREEN_DENSITY := 560
@@ -58,21 +53,21 @@ PRODUCT_PACKAGES += \
 
 # Keylayout - Assist
 PRODUCT_COPY_FILES += \
-    $(COMMON_FLASH_PATH)/keylayout/Vendor_1004_Product_637a.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1004_Product_637a.kl
+    $(COMMON_ALPHA_PATH)/keylayout/Vendor_1004_Product_637a.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1004_Product_637a.kl
 
 # Keylayout - Dual Display
-PRODUCT_COPY_FILES += \
-    $(COMMON_FLASH_PATH)/keylayout/touch_dev_2nd.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev_2nd.idc
+# PRODUCT_COPY_FILES += \
+#    $(COMMON_ALPHA_PATH)/keylayout/touch_dev_2nd.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev_2nd.idc
 
 # Livedisplay - SunlightEnhancement
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.lge_flash \
-    vendor.lineage.livedisplay@2.0-service.lge_flash.xml
+    vendor.lineage.livedisplay@2.0-service.lge_alpha \
+    vendor.lineage.livedisplay@2.0-service.lge_alpha.xml
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(COMMON_FLASH_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(COMMON_FLASH_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
+    $(COMMON_ALPHA_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(COMMON_ALPHA_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # Permissions
 PRODUCT_COPY_FILES += \
