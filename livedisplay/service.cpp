@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lineage.livedisplay@2.0-service.lge_flash"
+#define LOG_TAG "lineage.livedisplay@2.0-service.lge_alpha"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>

@@ -6,7 +6,7 @@ on init
     chmod 0660 /sys/devices/virtual/panel/brightness/irc_brighter
 	
 
-service vendor.livedisplay-hal-2-0-lge_flash /vendor/odm/bin/hw/vendor.lineage.livedisplay@2.0-service.lge_flash
+service vendor.livedisplay-hal-2-0-lge_alpha /vendor/odm/bin/hw/vendor.lineage.livedisplay@2.0-service.lge_alpha
     class hal
     user system
     group system

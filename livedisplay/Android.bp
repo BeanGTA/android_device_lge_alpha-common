@@ -13,7 +13,7 @@
 // limitations under the License.
 
 cc_defaults {
-    name: "livedisplay_lge_flash_defaults",
+    name: "livedisplay_lge_alpha_defaults",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -32,18 +32,18 @@ cc_defaults {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.lineage.livedisplay@2.0-service.lge_flash.xml",
+	name: "vendor.lineage.livedisplay@2.0-service.lge_alpha.xml",
 	owner: "lge",
-	src: "vendor.lineage.livedisplay@2.0-service.lge_flash.xml",
+	src: "vendor.lineage.livedisplay@2.0-service.lge_alpha.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service.lge_flash",
-    // vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.lge_flash.xml"],
-    init_rc: ["vendor.lineage.livedisplay@2.0-service.lge_flash.rc"],
-    defaults: ["livedisplay_lge_flash_defaults"],
+    name: "vendor.lineage.livedisplay@2.0-service.lge_alpha",
+    // vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.lge_alpha.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.0-service.lge_alpha.rc"],
+    defaults: ["livedisplay_lge_alpha_defaults"],
     device_specific: true,
 }
