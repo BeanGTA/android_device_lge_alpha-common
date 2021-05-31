@@ -58,7 +58,7 @@ while [ "${#}" -gt 0 ]; do
 done
 
 if [ -z "$SRC" ]; then
-    SRC=adb
+    SRC=/mnt/proprietary
 fi
 
 # Initialize the helper
