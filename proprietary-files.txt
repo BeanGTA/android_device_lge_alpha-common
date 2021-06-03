@@ -301,3 +301,7 @@ vendor/etc/wifi/NA_ALL/bdwlan_ch1.bin
 vendor/etc/wifi/KR_ALL/bdwlan.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
+
+# Extra (testing)
+vendor/bin/init.qti.chg_policy.sh
+vendor/firmware/crnv21.bin
