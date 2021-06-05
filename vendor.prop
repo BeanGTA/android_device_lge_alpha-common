@@ -5,13 +5,20 @@
 # Audio
 persist.vendor.audio.voicecall.speaker.stereo=false
 persist.vendor.lge.3rd.speaker.prot.enable=on
-persist.vendor.lge.audio.voice.clarity=off
 
 # Camera
-ro.vendor.lge.logical.camera=3
 ro.vendor.lge.aux.camera=1
 ro.vendor.lge.physical.camera=4
-vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera
+
+# This prop fixes a crash in several apps and binaries
+# It only works when https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/285278
+# is applied to lineage source.
+# This limits the number of physical cameras available to the camera hal.
+# Some apps and binaries were trying to probe the depth camera, which is 
+# used for face unlock on stock. This resulted in several system crashes.
+# we can change or remove this in the future if we find a way to limit
+# access to camera id 3 to only selected apps or services.
+vendor.camera.aux.physical=3
 
 # LGE Misc
 ro.vendor.lge.build.target_country=COM
