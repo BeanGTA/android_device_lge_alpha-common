@@ -179,6 +179,12 @@ vendor/lib/libgf_hal.so
 vendor/usr/idc/goodix_fp_key.idc
 vendor/usr/keylayout/goodix_fp_key.kl
 
+# FM
+system/lib/fm_helium.so
+system/lib/libfm-hci.so
+system/lib64/fm_helium.so
+system/lib64/libfm-hci.so
+
 # Graphics - firmware
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
@@ -209,6 +215,11 @@ vendor/firmware/a640_zap.elf
 vendor/firmware/a640_zap.mdt
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
+
+# Hotword Enrollment - from vayu-user 11 RKQ1.200826.002 V12.0.6.0.RJUMIXM release-keys (https://gitlab.com/xiaomi-sm8150-devs/android_vendor_xiaomi)
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|62e301d2f386771facd9a9aa546c0fcc241116da
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|8639661f6fad570723bc6f2759da76604bd804fa
+system_ext/framework/com.android.hotwordenrollment.common.util.jar;PRESIGNED|bef92589e75a6da6043f85f4b9b0e85866429624
 
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
@@ -303,5 +314,4 @@ vendor/etc/wifi/KR_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
 
 # Extra (testing)
-vendor/bin/init.qti.chg_policy.sh
 vendor/firmware/crnv21.bin

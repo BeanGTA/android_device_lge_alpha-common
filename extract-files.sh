@@ -58,7 +58,7 @@ while [ "${#}" -gt 0 ]; do
 done
 
 if [ -z "$SRC" ]; then
-    SRC=/mnt/proprietary
+    SRC=/mnt/proprietary/system_root
 fi
 
 # Initialize the helper

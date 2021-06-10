@@ -51,6 +51,10 @@ TARGET_SCREEN_DENSITY := 560
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.lge_msmnile
 
+# Hotword Enrollment
+PRODUCT_COPY_FILES += \
+		$(COMMON_ALPHA_PATH)/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml
+
 # Keylayout - Assist
 PRODUCT_COPY_FILES += \
     $(COMMON_ALPHA_PATH)/keylayout/Vendor_1004_Product_637a.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1004_Product_637a.kl
