@@ -74,9 +74,9 @@
     </reference>
     <reference name="DEFAULT_VOIP_VOLUME_CURVE">
     <!-- Default is Voip Volume Curve -->
-        <point>0,-2100</point>
-        <point>33,-1400</point>
-        <point>66,-700</point>
+        <point>0,-1800</point>
+        <point>33,-1200</point>
+        <point>66,-600</point>
         <point>100,0</point>
     </reference>
     <reference name="ACCESSIBILITY_VOLUME_CURVE">

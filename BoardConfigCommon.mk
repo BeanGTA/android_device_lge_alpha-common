@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-COMMON_FLASH_PATH := device/lge/alpha-common
+COMMON_ALPHA_PATH := device/lge/alpha-common
 
 # inherit from common sm8150
 -include device/lge/sm8150-common/BoardConfigCommon.mk
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_FLASH_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_ALPHA_PATH)/bluetooth
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lineage_alpha_defconfig
@@ -33,7 +33,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 108881453056
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 
 # SEPolicy
-BOARD_SEPOLICY_DIRS += $(COMMON_FLASH_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(COMMON_ALPHA_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
 -include vendor/lge/alphalm/BoardConfigVendor.mk
