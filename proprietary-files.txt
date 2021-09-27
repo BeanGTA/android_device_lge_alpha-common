@@ -313,5 +313,3 @@ vendor/etc/wifi/KR_ALL/bdwlan.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
 
-# Extra (testing)
-vendor/firmware/crnv21.bin
