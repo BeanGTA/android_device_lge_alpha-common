@@ -68,10 +68,6 @@ PRODUCT_COPY_FILES += \
 # PRODUCT_COPY_FILES += \
 #    $(COMMON_ALPHA_PATH)/keylayout/touch_dev_2nd.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev_2nd.idc
 
-# Livedisplay - SunlightEnhancement
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.lge_alpha \
-    vendor.lineage.livedisplay@2.0-service.lge_alpha.xml
 
 # Media
 PRODUCT_COPY_FILES += \
