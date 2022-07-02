@@ -36,4 +36,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 BOARD_SEPOLICY_DIRS += $(COMMON_ALPHA_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
--include vendor/lge/alphalm/BoardConfigVendor.mk
+-include vendor/lge/alphaplus/BoardConfigVendor.mk
